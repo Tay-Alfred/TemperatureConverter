@@ -1,11 +1,25 @@
 "use strict";
 
-function fahrenheitToCelsius() {
+const fahrenheitInput = document.getElementById("fahrenheitInput");
+const calculateButton = document.getElementById("calculateButton");
+const celsiusOutput = document.getElementById("celsiusOutput");
 
-    const fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
-  
-    const celsius = (fahrenheit - 32) * 5 / 9;
-  
-    document.getElementById("result").innerHTML = `${fahrenheit}°F is ${celsius}°C`;
-  
-  }
+window.onload = init;
+
+function init(){
+    calculateButton.oneclick - oncalculateButtonClicked;
+}
+
+function oncalculateButtonClicked(){
+    //get my starting values
+    let fahrenheit = Number(fahrenheitInput.value);
+
+    // compute the unknowns
+    let celsius = (fahrenheit - 32) * ( 5 /9 );
+
+    //display the result
+    celsiusOutput.value = celsius;
+
+}
+
+
