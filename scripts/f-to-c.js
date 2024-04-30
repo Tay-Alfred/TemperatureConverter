@@ -7,7 +7,7 @@ const celsiusOutput = document.getElementById("celsiusOutput");
 window.onload = init;
 
 function init(){
-    calculateButton.oneclick = oncalculateButtonClicked;
+    calculateButton.onclick = onCalculateButtonClicked;
 }
 
 function onCalculateButtonClicked(){
